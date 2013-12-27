@@ -17,7 +17,7 @@ development:
 test:
   adapter: postgresql
   host: localhost
-  database: wedding
+  database: wedding_test
   username: schneidy
   password:
   port: 5432
