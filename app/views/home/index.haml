@@ -1,15 +1,16 @@
 / Using partials in order to re-arrange the structure of the site at any time
-.col-md-12
-  = render :partial => "fixed_nav"
-.col-md-12
-  = render :partial => "nav"
-.col-md-12
-  = render :partial => "introduction"
-.col-md-12
-  = render :partial => "our_story"
-.col-md-12
-  = render :partial => "the_wedding"
-.col-md-12
-  = render :partial => "photos"
-.col-md-12
-  = render :partial => "registries"
+.container.col-md-12
+  .row
+    = render :partial => "fixed_nav"
+  .row
+    = render :partial => "nav"
+  .row
+    = render :partial => "introduction"
+  .row
+    = render :partial => "our_story"
+  .row
+    = render :partial => "the_wedding"
+  .row
+    = render :partial => "photos"
+  .row
+    = render :partial => "registries"
