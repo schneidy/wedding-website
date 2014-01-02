@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -7,6 +8,10 @@ gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.0'
 gem "bootstrap-sass", "~> 3.0.3.0"
 gem "haml", "~> 4.0.4"
+
+# To Help with Heroku
+gem 'rails_12factor'
+# gem 'rails3_serve_static_assets'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
