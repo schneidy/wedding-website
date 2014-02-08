@@ -8,6 +8,7 @@ gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.0'
 gem "bootstrap-sass", "~> 3.0.3.0"
 gem "compass-rails", "~> 1.1.3"
+gem "susy", "~> 1.0.9"
 gem "haml", "~> 4.0.4"
 
 # To Help with Heroku
