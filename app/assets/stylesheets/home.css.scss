@@ -1,3 +1,23 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+ 
+@import "compass/css3";
+
+@mixin striped-bg($bg-color: #ccc, $darken-amount: 5%, $stripe-color: darken($bg-color, $darken-amount)){
+  background-color: $bg-color;
+  @include background-image(linear-gradient(-45deg, $stripe-color 25%, transparent 25%, transparent 50%, $stripe-color 50%, $stripe-color 75%, transparent 75%, transparent));
+  background-size: 20px 20px;
+}
+
+#our-story{
+  @extend .striped;
+  color: #fff;
+  @include text-shadow(rgba(0,0,0,0.7) 0 -1px 1px);
+  @include striped-bg(#C8A2C8);
+}
