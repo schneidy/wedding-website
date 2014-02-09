@@ -90,7 +90,15 @@ body{
     img{
       width: 80%;
       height: 80%;
+      border: 10px #fff solid;
+      @include single-box-shadow;
+      @include transform(rotate(-2deg));
     }
+  }
+
+  .intro{
+    padding: 0 0 0 0;
+    margin: 0 0 0 -10px;
   }
 }
 
@@ -101,7 +109,7 @@ body{
 }
 
 #the-wedding{
-  height: $defualt-div-height;
+  min-height: $defualt-div-height;
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
 }
