@@ -47,7 +47,6 @@ body{
 #nav{
   height: $defualt-div-height;
   display: block;
-  //background-color: #E8E8E8;
   @include background(image-url("patterns/noise_lines.png"));
   @include single-box-shadow;
   width: 100%;
@@ -57,7 +56,7 @@ body{
     padding: 0px 0 0 0;
     margin: 100px 0 0 0;
 
-    #our-story, #the-wedding, #photos, #registries {
+    #our-story-nav, #the-wedding-nav, #photos-nav, #registries-nav {
       height: 40px;
       padding: 8px 0;
       border-top: 1px solid;
@@ -84,20 +83,37 @@ body{
 
 #introduction{
   height: $defualt-div-height;
+  @include background(image-url("patterns/greyzz.png"));
+  @include single-box-shadow;
+  padding: 40px 0 0 0;
+  .photo-kiss{
+    img{
+      width: 80%;
+      height: 80%;
+    }
+  }
 }
 
 #our-story{
   height: $defualt-div-height;
+  @include background(image-url("patterns/noise_lines.png"));
+  @include single-box-shadow;
 }
 
 #the-wedding{
   height: $defualt-div-height;
+  @include background(image-url("patterns/greyzz.png"));
+  @include single-box-shadow;
 }
 
 #photos{
   height: $defualt-div-height;
+  @include background(image-url("patterns/noise_lines.png"));
+  @include single-box-shadow;
 }
 
 #registries{
   height: $defualt-div-height;
+  @include background(image-url("patterns/greyzz.png"));
+  @include single-box-shadow;
 }
