@@ -9,6 +9,7 @@ $default-text-shadow-v-offset: 1px;
 $defualt-div-height: 300px;
  
 @import "compass/css3";
+@import "compass/css3/images";
 
 @mixin striped-bg($bg-color: #ccc, $darken-amount: 5%, $stripe-color: darken($bg-color, $darken-amount)){
   background-color: $bg-color;
@@ -46,7 +47,9 @@ body{
 #nav{
   height: $defualt-div-height;
   display: block;
-  background-color: #E8E8E8;
+  //background-color: #E8E8E8;
+  @include background(image-url("patterns/noise_lines.png"));
+  @include single-box-shadow;
   width: 100%;
   margin: 40px 0 0 0;
   ul{
