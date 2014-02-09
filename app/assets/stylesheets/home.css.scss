@@ -44,14 +44,52 @@ body{
 }
 
 #nav{
-  display: block;
   height: $defualt-div-height;
+  display: block;
+  background-color: #E8E8E8;
   width: 100%;
   margin: 40px 0 0 0;
-  a{
-    font-size: 16px;
-    color: #4E355D;
-    text-transform: uppercase;
+  ul{
+    display: block;
+    padding: 0px 0 0 0;
+    margin: -70px 0 0 0;
+
+    li {
+      height: 40px;
+      padding: 8px 0;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+
+    #our-story, #the-wedding {
+      float: left;
+    }
+
+    #photos, #registries {
+      float: right;
+    }
+
+    li a{
+      font-size: 16px;
+      color: #4E355D;
+      padding: 0 15px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+    }
+
+  }
+
+  span{
+    max-width: 900px;
+    position: relative;
+    img{
+      display: block;
+      width: 240px;
+      height: 120px;
+      margin: 75px auto 0 auto;
+      padding: 0 10px;
+    }
   }
 }
 

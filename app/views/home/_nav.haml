@@ -1,18 +1,19 @@
 #nav
-  .col-md-2
-  .col-md-8
-    .col-md-2
-      %a{href: "#our-story"}
-        Our Story
-    .col-md-2
-      %a{href: "#the-wedding"}
-        The Wedding
-    .col-md-2
+  .col-md-3
+  .col-md-6
+    .row
       %span
-        Logo
-    .col-md-2
-      %a{href: "#photos"}
-        Photos
-    .col-md-2
-      %a{href: "#registries"}
-        Registry
+        = image_tag "http://placekitten.com/g/240/120"
+      %ul.list-inline
+        %li#our-story
+          %a{href: "#our-story"}
+            Our Story
+        %li#the-wedding
+          %a{href: "#the-wedding"}
+            The Wedding
+        %li#photos
+          %a{href: "#photos"}
+            The Photos
+        %li#registries
+          %a{href: "#registries"}
+            Our Registries
