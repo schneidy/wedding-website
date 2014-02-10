@@ -1,3 +1,9 @@
 #photos
-  %h2 Photos
-  %p Coming soon
+  .row
+    .section-title
+      Photos
+  .row
+    .photo-container
+      - @engagementPhotosHoriz.each do |photo|
+        %a.fancybox{href: "assets/engagement_photos/full/#{photo.split('/').last}", rel: "group"}
+          = image_tag "engagement_photos/thumbs/#{photo.split('/').last}"

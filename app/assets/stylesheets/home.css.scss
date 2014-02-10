@@ -81,6 +81,13 @@ body{
   }
 }
 
+.section-title{
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #introduction{
   height: $defualt-div-height;
   @include background(image-url("patterns/greyzz.png"));
@@ -103,25 +110,50 @@ body{
 }
 
 #our-story{
-  height: $defualt-div-height;
   @include background(image-url("patterns/noise_lines.png"));
   @include single-box-shadow;
+  min-height: $defualt-div-height;
+  padding: 0 0 40px 0;
+
+  p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 1.3em;
+  }
+
+  p.header{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 #the-wedding{
-  min-height: $defualt-div-height;
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
+  min-height: $defualt-div-height;
 }
 
 #photos{
-  height: $defualt-div-height;
   @include background(image-url("patterns/noise_lines.png"));
   @include single-box-shadow;
+  min-height: 700px;
+  padding: 0 0 20px 0;
+
+  .photo-container{
+    width: 860px;
+    margin: 0 auto;
+    display: block;
+    img{
+      display: inline;
+      width: 280px;
+      padding: 3px;
+    }
+  }
 }
 
 #registries{
-  height: $defualt-div-height;
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
+  height: $defualt-div-height;
 }
