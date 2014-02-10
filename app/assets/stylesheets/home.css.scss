@@ -22,6 +22,12 @@ body{
   margin: 0;
 }
 
+p {
+  font-family: 'Linden Hill', serif;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
 #fixed-nav{
   background-color: #4E355D;
   position: fixed;
@@ -33,12 +39,15 @@ body{
 
   ul{
     padding: 10px 0 0 0;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
     li a{
       color: #fff;
       display: block;
       text-decoration: none;
       text-align: center;
-      padding: 0 5px;
+      padding: 0 8px;
       &:hover{ text-decoration: underline;} 
     }
   }
@@ -51,10 +60,16 @@ body{
   @include single-box-shadow;
   width: 100%;
   margin: 40px 0 0 0;
+
+  .hero-nav{
+    display: block;
+    width: 824px;
+    margin: 100px auto 0 auto;
+  }
+
   ul{
     display: block;
     padding: 0px 0 0 0;
-    margin: 100px 0 0 0;
 
     #our-story-nav, #the-wedding-nav, #photos-nav, #registries-nav {
       height: 40px;
@@ -64,6 +79,7 @@ body{
     }
 
     li a{
+      font-family: 'Linden Hill', serif;
       font-size: 16px;
       color: #4E355D;
       padding: 0 15px;
@@ -86,6 +102,7 @@ body{
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Linden Hill', serif;
 }
 
 #introduction{
@@ -117,9 +134,9 @@ body{
 
   p{
     text-align: center;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 17px;
     margin-bottom: 1.3em;
+    line-height: 24px;
   }
 
   p.header{
