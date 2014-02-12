@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @engagementPhotosHoriz = Dir.glob("app/assets/images/engagement_photos/thumbs/h_*.{jpg}")
+    @engagementPhotosThumbs = Dir.glob("app/assets/images/engagement_photos/thumbs/h_*.{jpg}")
+    @engagementPhotosFull = Dir.glob("app/assets/images/engagement_photos/full/h_*.{jpg}")
   end
 end
