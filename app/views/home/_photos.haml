@@ -4,5 +4,5 @@
       Photos
   .row
     .photo-container
-      - @engagementPhotosThumbs.each do |photo|
+      - @engagementPhotosFull.each do |photo|
         = link_to (image_tag "engagement_photos/thumbs/#{photo.split('/').last}"), "assets/engagement_photos/full/#{photo.split('/').last}", rel: "group", class: "fancybox"
