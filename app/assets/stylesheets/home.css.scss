@@ -149,6 +149,76 @@ p {
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
   min-height: $defualt-div-height;
+  padding: 0 0 20px 0;
+
+  p{
+    text-align: center;
+  }
+
+  .desc{
+    padding: 0 0 20px 0;
+  }
+
+  .wedding-heading{
+    font-size: 20px;
+
+  }
+
+  .location-name, .directions{
+    a{
+      color: #000;
+      border-bottom: 1px dotted #000;
+
+      &:hover{text-decoration:none;}
+    }
+  }
+  .location-address, .location-phone{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  .location-phone{ padding: 0 0 20px 0;}
+
+  .wedding-party{
+    ul{
+      list-style-type: none;
+      padding: 0 0 0 0;
+    }
+    padding: 0 10px;
+    background: url(border-decoration2.png) repeat-y 50% 0;
+  }
+  .wedding-party-tite{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .wedding-party-person{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hotel-info{}
+  .hotel{
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    p {
+      margin: 0;
+    }
+    .name{
+      font-weight: 700;
+    }
+    .addr1{}
+    .addr2{}
+    .phone{}
+    .map a{
+      color: #000;
+      border-bottom: 1px dotted #000;
+      &:hover{text-decoration:none;}
+    }
+  }
+
 }
 
 #photos{
