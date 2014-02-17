@@ -510,7 +510,7 @@ p {
 /* line 64, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav .hero-nav {
   display: block;
-  width: 824px;
+  width: 1090px;
   margin: 100px auto 0 auto;
 }
 /* line 70, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
@@ -537,8 +537,8 @@ p {
 }
 /* line 91, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav ul li img {
-  width: 240px;
-  height: 120px;
+  width: 500px;
+  height: 197px;
   margin: -40px auto 0 auto;
   padding: 0 10px;
 }
@@ -631,10 +631,11 @@ p {
 #photos .photo-container img {
   display: inline;
   width: 280px;
+  height: 187px;
   padding: 3px;
 }
 
-/* line 172, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 173, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries {
   background: url(/assets/patterns/greyzz.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
