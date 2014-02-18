@@ -719,6 +719,33 @@ p {
   box-shadow: 0px 0px 5px #333333;
   height: 300px;
 }
+/* line 247, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+#registries .desc {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 253, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+#registries .registry-links {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 257, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+#registries .registry-links ul {
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+/* line 261, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+#registries .registry-links li {
+  padding: 0 0 5px 0;
+}
+/* line 264, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+#registries .registry-links a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px dotted #000;
+}
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
