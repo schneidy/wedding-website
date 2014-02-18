@@ -244,4 +244,27 @@ p {
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
   height: $defualt-div-height;
+  .desc{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .registry-links{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    ul{
+      list-style-type: none;
+      padding: 0 0 0 0; 
+    }
+    li{
+      padding: 0 0 5px 0;
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px dotted #000;
+    }
+  }
 }
