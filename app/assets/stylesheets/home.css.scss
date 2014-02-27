@@ -11,11 +11,8 @@ $defualt-div-height: 300px;
 @import "compass/css3";
 @import "compass/css3/images";
 
-@mixin striped-bg($bg-color: #ccc, $darken-amount: 5%, $stripe-color: darken($bg-color, $darken-amount)){
-  background-color: $bg-color;
-  @include background-image(linear-gradient(-45deg, $stripe-color 25%, transparent 25%, transparent 50%, $stripe-color 50%, $stripe-color 75%, transparent 75%, transparent));
-  background-size: 20px 20px;
-}
+@include font-face("bookos", font-files("fonts/bookos.ttf"));
+@include font-face("bookosBold", font-files("fonts/bookosBold.ttf"));
 
 body{
   padding: 0;
@@ -23,8 +20,8 @@ body{
 }
 
 p {
-  font-family: 'Linden Hill', serif;
-  font-size: 17px;
+  font-family: "bookos";
+  font-size: 16px;
   line-height: 1.5em;
 }
 
@@ -79,7 +76,7 @@ p {
     }
 
     li a{
-      font-family: 'Linden Hill', serif;
+      font-family: "bookos";
       font-size: 16px;
       color: #4E355D;
       padding: 0 15px;
@@ -102,11 +99,11 @@ p {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Linden Hill', serif;
+  font-family: "bookosBold";
 }
 
 #introduction{
-  height: $defualt-div-height;
+  min-height: $defualt-div-height;
   @include background(image-url("patterns/greyzz.png"));
   @include single-box-shadow;
   padding: 40px 0 0 0;
@@ -189,8 +186,8 @@ p {
     background: url(border-decoration.png) repeat-y 50% 0;
   }
   .wedding-party-tite{
+    font-family: "bookosBold";
     font-size: 18px;
-    font-weight: 700;
     text-align: center;
   }
   .wedding-party-person{

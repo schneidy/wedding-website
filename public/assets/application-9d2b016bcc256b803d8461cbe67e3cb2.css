@@ -451,20 +451,30 @@
 
  */
 
-/* line 20, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+@font-face {
+  font-family: "bookos";
+  src: url(/fonts/fonts/bookos.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "bookosBold";
+  src: url(/fonts/fonts/bookosBold.ttf) format('truetype');
+}
+
+/* line 17, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 body {
   padding: 0;
   margin: 0;
 }
 
-/* line 25, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 22, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 p {
-  font-family: 'Linden Hill', serif;
-  font-size: 17px;
+  font-family: "bookos";
+  font-size: 16px;
   line-height: 1.5em;
 }
 
-/* line 31, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 28, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #fixed-nav {
   background-color: #4E355D;
   position: fixed;
@@ -476,14 +486,14 @@ p {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 40, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 37, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #fixed-nav ul {
   padding: 10px 0 0 0;
   width: 400px;
   margin: 0 auto;
   display: block;
 }
-/* line 45, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 42, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #fixed-nav ul li a {
   color: #fff;
   display: block;
@@ -491,12 +501,12 @@ p {
   text-align: center;
   padding: 0 8px;
 }
-/* line 51, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 48, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #fixed-nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 56, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 53, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav {
   height: 300px;
   display: block;
@@ -507,27 +517,27 @@ p {
   width: 100%;
   margin: 40px 0 0 0;
 }
-/* line 64, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 61, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav .hero-nav {
   display: block;
   width: 1090px;
   margin: 100px auto 0 auto;
 }
-/* line 70, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 67, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav ul {
   display: block;
   padding: 0px 0 0 0;
 }
-/* line 74, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 71, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav ul #our-story-nav, #nav ul #the-wedding-nav, #nav ul #photos-nav, #nav ul #registries-nav {
   height: 40px;
   padding: 8px 0;
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
-/* line 81, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 78, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav ul li a {
-  font-family: 'Linden Hill', serif;
+  font-family: "bookos";
   font-size: 16px;
   color: #4E355D;
   padding: 0 15px;
@@ -535,7 +545,7 @@ p {
   text-decoration: none;
   text-align: center;
 }
-/* line 91, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 88, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #nav ul li img {
   width: 500px;
   height: 197px;
@@ -543,25 +553,25 @@ p {
   padding: 0 10px;
 }
 
-/* line 100, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 97, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 .section-title {
   padding: 20px 0 10px 0;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Linden Hill', serif;
+  font-family: "bookosBold";
 }
 
-/* line 108, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 105, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #introduction {
-  height: 300px;
+  min-height: 300px;
   background: url(/assets/patterns/greyzz.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   padding: 40px 0 0 0;
 }
-/* line 114, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 111, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #introduction .photo-kiss img {
   width: 80%;
   height: 80%;
@@ -575,13 +585,13 @@ p {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
-/* line 123, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 120, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #introduction .intro {
   padding: 0 0 0 0;
   margin: 0 0 0 -10px;
 }
 
-/* line 129, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 126, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #our-story {
   background: url(/assets/patterns/noise_lines.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -590,20 +600,20 @@ p {
   min-height: 300px;
   padding: 0 0 40px 0;
 }
-/* line 135, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 132, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #our-story p {
   text-align: center;
   font-size: 17px;
   margin-bottom: 1.3em;
   line-height: 24px;
 }
-/* line 142, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 139, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #our-story p.header {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* line 148, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 145, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding {
   background: url(/assets/patterns/greyzz.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -612,83 +622,83 @@ p {
   min-height: 300px;
   padding: 0 0 20px 0;
 }
-/* line 154, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 151, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding p {
   text-align: center;
 }
-/* line 158, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 155, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .desc {
   padding: 0 0 20px 0;
 }
-/* line 162, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 159, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .wedding-heading {
   font-size: 20px;
 }
-/* line 168, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 165, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .location-name a, #the-wedding .directions a {
   color: #000;
   border-bottom: 1px dotted #000;
 }
-/* line 172, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 169, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .location-name a:hover, #the-wedding .directions a:hover {
   text-decoration: none;
 }
-/* line 175, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 172, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .location-address, #the-wedding .location-phone {
   text-align: center;
   font-size: 14px;
   line-height: 1.5em;
 }
-/* line 181, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 178, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .location-phone {
   padding: 0 0 20px 0;
 }
-/* line 183, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 180, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .wedding-party {
   padding: 0 10px;
   background: url(border-decoration.png) repeat-y 50% 0;
 }
-/* line 184, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 181, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .wedding-party ul {
   list-style-type: none;
   padding: 0 0 0 0;
 }
-/* line 191, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 188, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .wedding-party-tite {
+  font-family: "bookosBold";
   font-size: 18px;
-  font-weight: 700;
   text-align: center;
 }
-/* line 196, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 193, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .wedding-party-person {
   font-size: 12px;
   text-align: center;
 }
-/* line 202, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 199, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .hotel {
   text-align: center;
   font-size: 14px;
   margin: 0 0 20px 0;
 }
-/* line 206, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 203, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .hotel p {
   margin: 0;
 }
-/* line 209, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 206, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .hotel .name {
   font-weight: 700;
 }
-/* line 215, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 212, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .hotel .map a {
   color: #000;
   border-bottom: 1px dotted #000;
 }
-/* line 218, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 215, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #the-wedding .hotel .map a:hover {
   text-decoration: none;
 }
 
-/* line 224, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 221, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #photos {
   background: url(/assets/patterns/noise_lines.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -697,13 +707,13 @@ p {
   min-height: 700px;
   padding: 0 0 20px 0;
 }
-/* line 230, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 227, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #photos .photo-container {
   width: 860px;
   margin: 0 auto;
   display: block;
 }
-/* line 234, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 231, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #photos .photo-container img {
   display: inline;
   width: 280px;
@@ -711,7 +721,7 @@ p {
   padding: 3px;
 }
 
-/* line 243, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 240, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries {
   background: url(/assets/patterns/greyzz.png);
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -719,28 +729,28 @@ p {
   box-shadow: 0px 0px 5px #333333;
   height: 300px;
 }
-/* line 247, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 244, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries .desc {
   width: 600px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 253, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 250, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries .registry-links {
   width: 200px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 257, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 254, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries .registry-links ul {
   list-style-type: none;
   padding: 0 0 0 0;
 }
-/* line 261, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 258, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries .registry-links li {
   padding: 0 0 5px 0;
 }
-/* line 264, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
+/* line 261, /Users/schneidy/Documents/wedding-website/app/assets/stylesheets/home.css.scss */
 #registries .registry-links a {
   text-decoration: none;
   color: #000;
