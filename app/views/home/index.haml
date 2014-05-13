@@ -2,6 +2,10 @@
 .container.col-md-12.col-sm-12.col-xs-12
   .row
     = render :partial => "fixed_nav"
+  .dinner-update
+    %div{:class => "alert alert-danger fadeout", "data-dismiss" => "alert"}
+      %button.close &times;
+      = "Note: The rehersal dinner is on Saturday, May 24th at 5:00pm. Contact us for address."
   .row
     = render :partial => "nav"
   .row
