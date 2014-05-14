@@ -10,6 +10,9 @@ gem "bootstrap-sass", "~> 3.0.3.0"
 gem "compass-rails", "~> 1.1.3"
 gem "haml", "~> 4.0.4"
 
+
+gem 'annotate', '~> 2.6.3'
+
 # To Help with Heroku
 gem 'rails_12factor'
 # gem 'rails3_serve_static_assets'
