@@ -2,4 +2,9 @@
   .row
     %h2 Sign up page
   .row
+    %p#error 
+      = flash[:error]
+    %p#notice
+      = flash[:notice]
+  .row
     = render :partial => "form"

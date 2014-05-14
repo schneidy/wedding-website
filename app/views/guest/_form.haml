@@ -1,1 +1,31 @@
-%p form
+= form_for :guest, url: rsvp_path do |f|
+  - if @guest.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@guest.errors.count, "error")
+        prohibited
+        this article from being saved:
+      %ul
+        - @guest.errors.full_messages.each do |msg|
+          %li= msg
+  %p
+    = f.label :email
+    %br/
+    = f.email_field :email
+  %p
+    = f.label :names, "People attending?"
+    %br/
+    = f.text_area :names
+  %p
+    = f.label :children, "Children attending? (Check for yes)"
+    %br/
+    = f.check_box :children
+  %p
+    = f.label :total_attending
+    %br/
+    = f.number_field :total_attending
+  %p
+    = f.label :comment
+    %br/
+    = f.text_area :comment
+  %input{:type => "submit", :value => "Save", :class => "btn btn-primary"}
