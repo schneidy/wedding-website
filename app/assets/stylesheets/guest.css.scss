@@ -1,0 +1,34 @@
+// Place all the styles related to the celebration controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 1px;
+$defualt-div-height: 300px;
+ 
+@import "compass/css3";
+@import "compass/css3/images";
+
+@include font-face("bookos", font-files("fonts/bookos.ttf"));
+@include font-face("bookosBold", font-files("fonts/bookosBold.ttf"));
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: "bookos";
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+#information{
+  background-color: red;
+  background: url(book_kiss_blur.png) no-repeat center center fixed; 
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
