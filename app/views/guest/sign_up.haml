@@ -1,16 +1,20 @@
-.container
-  .row#signup#information
-    .col-md-6.col-sm-12.col-xs-12
-      %p
+.row#introducting
+  .container
+    #introducing-text-holder.col-md-6.col-sm-12.col-xs-12
+      %p#intro
         Introducing
-      %p 
+      %p#names
         Becca & Dan Schneiderman
+
+.row#information
+  .container
+    .col-md-8.col-sm-12.col-xs-12
       %p
         We would like to invite you to a celebration of our recent marriage
       %p
         May 31, 2014 
       %p
-        at 2 o'clock in the afternoon
+        from 2 till 5 o'clock in the afternoon
       %p
         5084 East Henrietta Road (Burns Court)
         Henrietta, NY 14467
@@ -24,11 +28,11 @@
         or Laurel Schneiderman at laurelgs31@gmail.com
         %br
         For phone: 317-8179 (Carol)
-    
-  / .row
-  /   %p#error 
-  /     = flash[:error]
-  /   %p#notice
-  /     = flash[:notice]
-  / .row
-  /   = render :partial => "form"
+  
+/ .row
+/   %p#error 
+/     = flash[:error]
+/   %p#notice
+/     = flash[:notice]
+/ .row
+/   = render :partial => "form"

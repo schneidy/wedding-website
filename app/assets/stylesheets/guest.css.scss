@@ -10,6 +10,10 @@ $defualt-div-height: 300px;
 @import "compass/css3";
 @import "compass/css3/images";
 
+$default-text-shadow-color: rgba(black, 0.8);
+$default-text-shadow-blur: 24px;
+$default-text-shadow-v-offset: 1px;
+
 @include font-face("bookos", font-files("fonts/bookos.ttf"));
 @include font-face("bookosBold", font-files("fonts/bookosBold.ttf"));
 
@@ -19,16 +23,45 @@ body{
 }
 
 p {
+  color: #000;
   font-family: "bookos";
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5em;
 }
 
-#information{
-  background-color: red;
+#introducting{
+  height: 600px;
   background: url(book_kiss_blur.png) no-repeat center center fixed; 
   -webkit-background-size: cover; 
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  p {
+    color: #fdf5e6;
+    @include single-text-shadow;
+    text-align: center;
+    margin: 0 0 0 0;
+  }
+
+  #intro{
+    font-size: 38px;
+    margin: 0 0 20px 0;
+  }
+
+  #names{
+    font-size: 54px;
+    line-height: 1.2em;
+  }
+
+  #introducing-text-holder{
+    padding: 50px 0 0 50px;
+    margin: 0 0 0 0;
+  }
+}
+
+#information{
+  min-height: 400px;
+  background-color: #4E355D;
+  @include single-box-shadow;
 }
