@@ -8,26 +8,33 @@
 
 .row#information
   .container
-    .col-md-8.col-sm-12.col-xs-12
-      %p
-        We would like to invite you to a celebration of our recent marriage
-      %p
-        May 31, 2014 
-      %p
-        from 2 till 5 o'clock in the afternoon
-      %p
-        5084 East Henrietta Road (Burns Court)
-        Henrietta, NY 14467
-      %p
-        RSVP
-      %p
-        by the 27th of May
-      %p
-        to Carol Kennedy at carol@carolkennedylmt.com
-        %br
-        or Laurel Schneiderman at laurelgs31@gmail.com
-        %br
-        For phone: 317-8179 (Carol)
+    #information-text-holder
+      .col-md-8.col-md-offset-2.col-sm-12.col-xs-12
+        .row
+          %p
+            We would like to invite you to a celebration of our recent marriage
+          %p
+            May 31, 2014 
+          %p
+            from 2 till 5 o'clock in the afternoon
+          %p
+            5084 East Henrietta Road (Burns Court)
+            Henrietta, NY 14467
+          %p
+            RSVP
+          %p
+            by the 27th of May
+          %p
+            to Carol Kennedy at carol@carolkennedylmt.com
+            %br
+            or Laurel Schneiderman at laurelgs31@gmail.com
+            %br
+            For phone: 317-8179 (Carol)
+        .row
+          #website
+            %p
+              For more wedding info, checkout:
+              = link_to "wedding.schneidy.com", root_path
   
 / .row
 /   %p#error 
