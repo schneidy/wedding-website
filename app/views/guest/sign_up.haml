@@ -1,10 +1,34 @@
 .container
-  .row
-    %h2 Sign up page
-  .row
-    %p#error 
-      = flash[:error]
-    %p#notice
-      = flash[:notice]
-  .row
-    = render :partial => "form"
+  .row.information
+    .col-md-6.col-md-offset-6.col-sm-12.col-xs-12
+      %p
+        Introducing
+      %p 
+        Becca & Dan Schneiderman
+      %p
+        We would like to invite you to a celebration of our recent marriage
+      %p
+        May 31, 2014 
+      %p
+        at 2 o'clock in the afternoon
+      %p
+        5084 East Henrietta Road (Burns Court)
+        Henrietta, NY 14467
+      %p
+        RSVP
+      %p
+        by the 27th of May
+      %p
+        to Carol Kennedy at carol@carolkennedylmt.com
+        %br
+        or Laurel Schneiderman at laurelgs31@gmail.com
+        %br
+        For phone: 317-8179 (Carol)
+    
+  / .row
+  /   %p#error 
+  /     = flash[:error]
+  /   %p#notice
+  /     = flash[:notice]
+  / .row
+  /   = render :partial => "form"
