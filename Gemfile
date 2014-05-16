@@ -12,6 +12,7 @@ gem "haml", "~> 4.0.4"
 
 
 gem 'annotate', '~> 2.6.3'
+gem 'sprockets-image_compressor'
 
 # To Help with Heroku
 gem 'rails_12factor'

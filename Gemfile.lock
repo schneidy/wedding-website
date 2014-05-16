@@ -108,6 +108,8 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sprockets-image_compressor (0.2.3)
+      sprockets
     sprockets-rails (2.0.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -142,5 +144,6 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
+  sprockets-image_compressor
   turbolinks
   uglifier (>= 1.3.0)
